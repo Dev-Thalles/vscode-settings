@@ -1,0 +1,199 @@
+{
+  // ════════════════════════════════════════════════════════════════════════════════
+  // 🖥️ WORKSPACE UI - NO BLOAT
+  // ════════════════════════════════════════════════════════════════════════════════
+  "workbench.startupEditor": "none",
+  "workbench.colorTheme": "Tokyo Night",
+  "workbench.iconTheme": "symbols",
+  "workbench.productIconTheme": "Default",
+  "workbench.editor.labelFormat": "short",
+  "workbench.statusBar.visible": true,
+  "workbench.editor.enablePreview": false,
+  "workbench.tree.enableStickyScroll": false,
+  "window.titleBarStyle": "custom",
+  "window.dialogStyle": "custom",
+
+  // ════════════════════════════════════════════════════════════════════════════════
+  // 🖊️ EDITOR LOOK & FEEL - LEAN
+  // ════════════════════════════════════════════════════════════════════════════════
+  "editor.fontFamily": "JetBrains Mono, 'Fira Code', monospace",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 14,
+  "editor.lineHeight": 1.8,
+  "editor.cursorStyle": "line-thin",
+  "editor.cursorBlinking": "smooth",
+  "editor.cursorSmoothCaretAnimation": "off",
+  "editor.guides.bracketPairs": false,
+  "editor.renderWhitespace": "selection",
+  "editor.renderLineHighlight": "gutter",
+  "editor.renderControlCharacters": false,
+  "editor.minimap.enabled": false,
+  "editor.hover.delay": 150,
+  "editor.smoothScrolling": false,
+  "workbench.list.smoothScrolling": false,
+  "terminal.integrated.smoothScrolling": false,
+  "editor.scrollbar.verticalScrollbarSize": 6,
+  "editor.scrollbar.horizontalScrollbarSize": 6,
+
+  // ════════════════════════════════════════════════════════════════════════════════
+  // ⚡ PERFORMANCE & STABILITY - MAX PRIVACY
+  // ════════════════════════════════════════════════════════════════════════════════
+  "editor.experimental.asyncTokenization": false,
+  "editor.largeFileOptimizations": true,
+  "editor.scrollPredominantAxis": true,
+  "editor.fastScrollSensitivity": 7,
+  "editor.mouseWheelScrollSensitivity": 1.5,
+  "editor.quickSuggestionsDelay": 20,
+  "editor.linkedEditing": true,
+  "editor.stablePeek": false,
+  "editor.unicodeHighlight.allowedLocales": { "pt": true, "en": true },
+  "editor.accessibilitySupport": "off",
+  "editor.renderValidationDecorations": "off",
+  "workbench.editor.decorations.badges": true,
+  "workbench.editor.decorations.colors": true,
+
+  // 🔒 COMPLETE TELEMETRY & TRACKING BLOCK
+  "telemetry.enableTelemetry": false,
+  "telemetry.enableCrashReporter": false,
+  "telemetry.telemetryLevel": "off",
+  "redhat.telemetry.enabled": false,
+  "omnisharp.telemetry.enabled": false,
+  "dotnet.telemetry.enabled": false,
+  "bracketPairColorizer.telemetry.enabled": false,
+  "gitlens.telemetry.enabled": false,
+  "gitlens.ai.enabled": false,
+  "workbench.settings.enableNaturalLanguageSearch": false,
+
+  // ⚙️ UPDATES
+  "update.mode": "default",
+  "update.showReleaseNotes": false,
+  "extensions.autoCheckUpdates": true,
+  "extensions.autoUpdate": true,
+
+  // 🛡️ SECURITY & PRIVACY
+  "security.workspace.trust.untrustedFiles": "newWindow",
+  "window.restoreWindows": "none",
+  "window.restoreFullscreen": false,
+  "breadcrumbs.enabled": false,
+
+  // ════════════════════════════════════════════════════════════════════════════════
+  // ✏️ EDITING & SUGGESTIONS - KEPT (AS REQUESTED)
+  // ════════════════════════════════════════════════════════════════════════════════
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.suggestSelection": "first",
+  "editor.acceptSuggestionOnEnter": "on",
+  "editor.quickSuggestions": {
+    "strings": true,
+    "comments": false,
+    "other": true
+  },
+  "editor.parameterHints.enabled": true,
+  "editor.inlineSuggest.enabled": true,
+  "editor.wordBasedSuggestions": "currentDocument",
+  "editor.snippetSuggestions": "inline",
+  "editor.selectionHighlight": false,
+  "editor.occurrencesHighlight": "off",
+  "editor.suggest.localityBonus": true,
+  "editor.inlineSuggest.showToolbar": "onHover",
+  "editor.acceptSuggestionOnCommitCharacter": false,
+
+  // ════════════════════════════════════════════════════════════════════════════════
+  // 🧩 CODE ACTIONS & FORMATTING
+  // ════════════════════════════════════════════════════════════════════════════════
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit",
+    "source.organizeImports": "explicit"
+  },
+  "[javascript]": { "editor.defaultFormatter": "biomejs.biome" },
+  "[typescript]": { "editor.defaultFormatter": "biomejs.biome" },
+  "[json]": { "editor.defaultFormatter": "biomejs.biome" },
+
+  // ════════════════════════════════════════════════════════════════════════════════
+  // 📁 FILES & EXPLORER - LEAN
+  // ════════════════════════════════════════════════════════════════════════════════
+  "explorer.compactFolders": false,
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.autoReveal": false,
+  "explorer.decorations.badges": false,
+  "explorer.decorations.colors": false,
+  "files.trimTrailingWhitespace": true,
+  "files.autoSave": "onFocusChange",
+  "files.hotExit": "onExitAndWindowClose",
+  "files.useExperimentalFileWatcher": true,
+  "files.exclude": {
+    "**/.git": true,
+    "**/.hg": true,
+    "**/.svn": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/node_modules": true,
+    "**/dist": true,
+    "**/build": true
+  },
+  "files.watcherExclude": {
+    "**/node_modules/**": true,
+    "**/dist/**": true,
+    "**/build/**": true,
+    "**/.git/**": true
+  },
+
+  // ════════════════════════════════════════════════════════════════════════════════
+  // 💻 TERMINAL - SNAPPY
+  // ════════════════════════════════════════════════════════════════════════════════
+  "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
+  "terminal.integrated.fontSize": 13,
+  "terminal.integrated.cursorBlinking": false,
+  "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.gpuAcceleration": "on",
+  "terminal.integrated.scrollback": 5000,
+  "terminal.integrated.showExitAlert": false,
+  "terminal.integrated.confirmOnExit": "never",
+
+  // ════════════════════════════════════════════════════════════════════════════════
+  // 🌿 GIT - MINIMAL
+  // ════════════════════════════════════════════════════════════════════════════════
+  "git.enableSmartCommit": true,
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  "gitlens.codeLens.enabled": false,
+  "git.decorations.enabled": false,
+
+  // ════════════════════════════════════════════════════════════════════════════════
+  // 🌐 EMMET / HTML / CSS
+  // ════════════════════════════════════════════════════════════════════════════════
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact",
+    "typescript": "typescriptreact"
+  },
+  "emmet.syntaxProfiles": {
+    "javascript": "jsx",
+    "typescript": "jsx"
+  },
+
+  // ════════════════════════════════════════════════════════════════════════════════
+  // 🚫 COMPLETE AI & BLOAT REMOVAL
+  // ════════════════════════════════════════════════════════════════════════════════
+  "github.copilot.enable": {
+    "*": false
+  },
+  "github.copilot.editor.enableAutoCompletions": false,
+  "github.copilot.chat.enabled": false,
+  "chat.disableAIFeatures": true,
+  "chat.enabled": false,
+  "workbench.experimental.chat.enabled": false,
+  "window.commandCenter": false,
+  "workbench.welcomePage.walkthroughs.openOnInstall": false,
+  "workbench.statusBar.visible": true,
+
+  // 🎯 DISABLE UNNECESSARY FEATURES
+  "editor.lightbulb.enabled": "onCode",
+  "editor.inlayHints.enabled": "on",
+  "editor.unicodeHighlight.ambiguousCharacters": true,
+  "editor.unicodeHighlight.invisibleCharacters": true,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "scm.diffDecorations": "all"
+}
